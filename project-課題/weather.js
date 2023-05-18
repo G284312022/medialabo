@@ -46,9 +46,6 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(date.name);
-for(let n of date.main){
-    console.log(n)
-}
-console.log(date.temp_max);
-console.log(data.temp_min);
+console.log(data.name);
+console.log(data.main.temp_max);
+console.log(data.main.temp_min);
