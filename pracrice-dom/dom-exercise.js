@@ -20,11 +20,38 @@ let p = document.createElement('p');
 p.textContent = '写真表と都市の緯度経度です' 
 
 h2.insertAdjacentElement('afterend', p);
+
+p.style.textEmphasis='sesame green';
 // 練習4-3 写真表作成プログラム
+let div = document.querySelector('div#phototable');
 
+let taro =document.createElement('img');
+taro.setAttribute('src','taro.png');
+let tarop = document.createElement('p');
+tarop.insertAdjacentElement('beforeend',taro);
+div.insertAdjacentElement('beforeend',tarop)
 
+let jiro = document.createElement('img');
+jiro.setAttribute('src','jiro.png');
+let jirop = document.createElement('p');
+jirop.insertAdjacentElement('beforeend',jiro);
+div.insertAdjacentElement('beforeend',jirop);
+
+let hanako = document.createElement('img');
+hanako.setAttribute('src','hanako.png');
+let hanakop = document.createElement('p');
+hanakop.insertAdjacentElement('beforeend',hanako);
+div.insertAdjacentElement('beforeend',hanakop);
 // 練習4-4 箇条書き削除プログラム
-
+let li = document.querySelectorAll('li');
+for(let l of li){
+	l.remove();
+}
 
 // 練習4-5 箇条書き追加プログラム
-
+let idokeido = document.querySelector('ul#location');
+for(let n of data){
+	let toshi =document.createElement('li');
+	toshi.textContent = n.name+"...緯度:"+n.lat+"経度:"+n.lng;
+	idokeido.insertAdjacentElement('beforeend',toshi);
+}
