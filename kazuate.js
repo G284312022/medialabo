@@ -29,20 +29,21 @@ function hantei() {
 
   kaisup=(kaisu+1);
   console.log(kaisup+"回目の予想:"+yoso);
+  let aa = document.querySelector('span#result');
   if(kaisu < 3){
+    aa =("答えは"+kotae+"でした。すでにゲームは終わっています。")
   if(kotae === yoso){
-    console.log("正解です。おめでとう。");
+    aa = ("正解です。おめでとう。");
     kaisu = 3;
   } 
   if(kotae < yoso){
-    console.log("まちがい、答えはもっと小さいですよ");
+    aa = ("まちがい、答えはもっと小さいですよ");
   }
   if(kotae > yoso){
-    console.log("まちがい、答えはもっと大きいですよ");
+    aa = ("まちがい、答えはもっと大きいですよ");
   }
-}else{
-    console.log("答えは"+kotae+"でした。すでにゲームは終わっています。");
-}
-kaisu = kaisu + 1;
-document.getElementById('result').textContent = re;
+  }else{
+    aa = ("答えは"+kotae+"でした。すでにゲームは終わっています。");
+  }
+  document.getElementById('result').textContent = aa;
 }

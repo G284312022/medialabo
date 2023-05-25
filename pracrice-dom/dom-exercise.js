@@ -29,7 +29,7 @@ let taro =document.createElement('img');
 taro.setAttribute('src','taro.png');
 let tarop = document.createElement('p');
 tarop.insertAdjacentElement('beforeend',taro);
-div.insertAdjacentElement('beforeend',tarop)
+div.insertAdjacentElement('beforeend',tarop);
 
 let jiro = document.createElement('img');
 jiro.setAttribute('src','jiro.png');
