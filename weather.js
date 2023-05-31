@@ -46,6 +46,8 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name);
-console.log(data.main.temp_max);
-console.log(data.main.temp_min);
+let a = document.querySelector('span#tenki')
+a =(data.name);
+a =(data.main.temp_max);
+a =(data.main.temp_min);
+document.getElementById('tenki').textContent = a;
