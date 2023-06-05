@@ -51,3 +51,5 @@ a =(data.name);
 a =(data.main.temp_max);
 a =(data.main.temp_min);
 document.getElementById('tenki').textContent = a;
+
+
