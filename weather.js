@@ -46,10 +46,10 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-let a = document.querySelector('span#tenki')
-a =(data.name);
-a =(data.main.temp_max);
-a =(data.main.temp_min);
-document.getElementById('tenki').textContent = a;
+//let a = document.querySelector('span#tenki')
+//a =(data.name);
+//a =(data.main.temp_max);
+//a =(data.main.temp_min);
+
 
 

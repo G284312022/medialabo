@@ -33,3 +33,25 @@ table {
   th[scope='row']{
     background-color: #d7d9f2;
   }
+  div.zentai {
+    display: flex;          /* フレックスボックスにする */
+    flex-direction: column;    /* 横向きに表示（column に変更すると縦向きに表示） */
+
+    width: 500px;
+    border: 3px solid gray;
+    padding: 5px 5px 5px 0;
+}
+
+div.long {
+    flex: 2;                /* 横幅2で表示 */
+
+    background-color: aqua;
+    margin-left: 0px;
+}
+
+div.short {
+    flex:3;                /* 横幅1で表示 */
+
+    background-color: rgb(61, 154, 241);
+    margin-left: 0px;
+}
