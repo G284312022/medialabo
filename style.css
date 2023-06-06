@@ -1,5 +1,12 @@
-p{
+p1{
     color:rgb(30, 2, 106);
+    font-size: 23;
+}
+p2{
+    font-size: 19px;
+}
+p{
+    color: (30,2,106);
 }
 
 h1{
@@ -15,7 +22,8 @@ h2{
 
 }
 h3{
-    color: rgb(64, 120, 250);
+    color: rgb(0, 0, 0);
+    background: linear-gradient(90deg,rgb(46, 126, 239),#ffefaf);
 }
 div#zentai {
 	display: grid;
@@ -28,4 +36,16 @@ div#zentai {
 div#zentai > div {
 	margin-left: 5px;
 	background-color: #ffefaf;
+}
+div.zentai {
+    display: grid;                      /* グリッドレイアウトにする*/
+    grid-template-columns: 1fr 1fr ; /* 3列にする．幅は 1:2:2 の比率*/
+    grid-auto-rows: 450px 450px;        /* 高さは 100px */
+    grid-gap: 15px;                     /* 隣り合う行（列）の間隔を 10px に*/
+
+    width: 800px;
+}
+
+div.box {
+    background: cyan;
 }

@@ -4,8 +4,8 @@ body{
 }
 h1{
    font-size: 50px;
-    color: blue;
-    text-shadow: rgba(223, 58, 223, 0.839)1px 0 10px;
+    color: rgb(27, 27, 202);
+    text-shadow: rgba(79, 234, 255, 0.839)8px 0 10px;
     text-align: center;
 }
 
