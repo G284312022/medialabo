@@ -1,57 +1,65 @@
+body{
+  margin:0;
+  padding: 20px;
+}
 h1{
+   font-size: 50px;
     color: blue;
     text-shadow: rgba(223, 58, 223, 0.839)1px 0 10px;
+    text-align: center;
 }
 
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(16, 1, 1);
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-size: 0.8rem;
-  }
-
-  th, td {
-    border: 1px solid rgb(190,190,190); 
-    padding: 20px;
-
-  }
-
-  td{
-    text-align: center;
-  }
-
-  tr:nth-child(even){
-    background-color: #eee;
-  }
-
-  th[scope='col']{
-    background-color: #696969;
-    color: #fff;
-  }
-
-  th[scope='row']{
-    background-color: #d7d9f2;
-  }
   div.zentai {
     display: flex;          /* フレックスボックスにする */
     flex-direction: column;    /* 横向きに表示（column に変更すると縦向きに表示） */
 
-    width: 500px;
-    border: 3px solid gray;
-    padding: 5px 5px 5px 0;
+    width: 600px;
+    border: 5px solid black;
 }
 
 div.long {
     flex: 2;                /* 横幅2で表示 */
 
-    background-color: aqua;
+    background: linear-gradient(100deg,rgb(244, 81, 105),#ffef);
     margin-left: 0px;
 }
 
 div.short {
     flex:3;                /* 横幅1で表示 */
 
-    background-color: rgb(61, 154, 241);
+    background: linear-gradient(90deg,lightskyblue, #ffef);
     margin-left: 0px;
+}
+label{
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+select{
+  font-size: 20px;
+}
+
+button {
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+label{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+h3{
+  margin-top: 50px;
+  margin-left: 100px;
+}
+div{
+  margin-top: 10px;
+  font-size: 25px;
 }

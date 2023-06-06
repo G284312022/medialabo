@@ -4,12 +4,14 @@
         <link rel="stylesheet" href="project.css">
         <meta charset="utf-8">
         <script src="project.js"defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
         <title>世界の天気</title>
     </head>
     <body>
         <h1>世界の天気</h1>
+        <h2>各地の天気、最高気温と最低気温</h2>
 
-        <div id="zentai">
+        <p id="zentai">
             <label for="toshi">都市を選んでください</label>
             <select id="project" name="project">
                 <option value="">都市を選んでね!</option>
@@ -27,20 +29,19 @@
                 <option value="5368361">ロサンゼルス</option>
             </select>   
             <button  id="btn">検索</button> 
-        </div>
-        <h3>各地の天気、最高気温と最低気温</h3>
+        </p>
+        <h3>
         <div class= "zentai" >
-
-                <div class="short">都市名:<p id="p"></p></div>
-                <div class="long">最高気温:<p id="p2"></p></div>
-                <div class="short">最低気温<p id="p3"></p></div>
-                <div class="long">緯度:<p id="p4"></span></div>
-                <div class="short">経度:<p id="p5"></p></div>
-                <div class="long">天気:<p id="p6"></p></div>
-                <div class="short">湿度:<p id="p7"></p></div>
-                <div class="long">風速:<p id="p8"></p></div>
-                <div class="short">風向:<p id="p9"></p></div>
-        
+                <div class="short">都市名:<span id="p"></span></div>
+                <div class="long">最高気温:<span id="p2"></span></div>
+                <div class="short">最低気温:<span id="p3"></span></div>
+                <div class="long">緯度:<span id="p4"></span></div>
+                <div class="short">経度:<span id="p5"></span></div>
+                <div class="long">天気:<span id="p6"></span></div>
+                <div class="short">湿度:<span id="p7"></span></div>
+                <div class="long">風速:<span id="p8"></span></div>
+                <div class="short">風向:<span id="p9"></span></div>
+        </h3>
         </div>
     </body>
 </html>
