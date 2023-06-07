@@ -10,8 +10,10 @@ p{
 }
 
 h1{
-    color:rgb(98, 24, 227);
-    text-shadow:rgb(2, 2, 63)
+    color:rgb(41, 87, 255);
+    text-shadow:rgb(2, 2, 63);
+    background: linear-gradient(90deg,rgba(163, 157, 243, 0.861),#3e9ef1);
+    text-align: center;
 }
 
 h2{
@@ -43,7 +45,7 @@ div.zentai {
     grid-auto-rows: 450px 450px;        /* 高さは 100px */
     grid-gap: 15px;                     /* 隣り合う行（列）の間隔を 10px に*/
 
-    width: 800px;
+    width: 1650px;
 }
 
 div.box {
