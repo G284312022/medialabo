@@ -13,24 +13,25 @@ x.addEventListener('clik',hantei);
 function hantei() {
   let a =document.querySelector('input[name="y"]');
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = a.value;
+  let y = a.value;
   kaisu = kaisu + 1;
 
-  let su = document.querySelector('span#kaisu');
-  su.textContent = kaisu;
 
-  let an = document.querySelector('span#answer');
-  an.textContent = yoso;
+
 
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-  
+  let kati=0;
   let aa = document.querySelector('p#result');
-  if(kaisu < 3){
+  if(kaisu < 4 && kati !== 1){
+    let an = document.querySelector('span#answer');
+    an.textContent = yoso;
+    let su = document.querySelector('span#kaisu');
+    su.textContent = kaisu;
     if(kotae === yoso){
       aa.textContent  ("正解です。おめでとう。");
-      kaisu = 3;
+      kaisu = 1;
     } if(kotae < yoso){
       aa.textContent = ("まちがい、答えはもっと小さいですよ");
     }if(kotae > yoso){
